@@ -115,7 +115,7 @@ neighborPriceData <- neighborPriceData %>%
 
 data <- bind_cols(data, select(neighborPriceData, diffPrice_neighbor1:diffPercent_neighbor5))
 
-saveRDS(data, file = "data/data_11.Rda")
+#saveRDS(data, file = "data/data_11.Rda")
 
 ###
 # add wordDF to data
