@@ -7,21 +7,21 @@ Some of the challenges faced in the project involves text analytics, working wit
 
 The training set has 49352 observations, and the testing set has 74659 observations.
 The data fields given are as follows:
-⋅⋅*bathrooms: number of bathrooms
-⋅⋅*bedrooms: number of bathrooms
-⋅⋅*building_id
-⋅⋅*created
-⋅⋅*description
-⋅⋅*display_address
-⋅⋅*features: a list of features about this apartment
-⋅⋅*latitude
-⋅⋅*listing_id
-⋅⋅*longitude
-⋅⋅*manager_id
-⋅⋅*photos: a list of photo links
-⋅⋅*price: in USD
-⋅⋅*street_address
-⋅⋅*interest_level: this is the target variable. It has 3 categories: 'high', 'medium', 'low'
+* bathrooms: number of bathrooms
+* bedrooms: number of bathrooms
+* building_id
+* created
+* description
+* display_address
+* features: a list of features about this apartment
+* latitude
+* listing_id
+* longitude
+* manager_id
+* photos: a list of photo links
+* price: in USD
+* street_address
+* interest_level: this is the target variable. It has 3 categories: 'high', 'medium', 'low'
 
 ### Feature Engineering
 Below are the reasonings behind some of the new features added to the modeling process:  
