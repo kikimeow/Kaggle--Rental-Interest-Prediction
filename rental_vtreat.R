@@ -1,5 +1,5 @@
 # setup
-path <- "~/Kaggle/Kaggle- Rentals"
+path <- "input path"
 setwd(path)
 
 # memory management
@@ -8,7 +8,7 @@ memory.limit(size = 100000)
 packages <-c("vtreat")  #  load plyr ALWAYS before dplyr, AND not load plyr again.
 lapply(packages, FUN = function(X) {do.call("library", list(X))})
 
-data <- readRDS(file = "data/data_8.Rda")
+data <- readRDS(file = "data/data.Rda")
 
 ##
 # Run categorical cross-frame experiment on high-cardinality categorical variables
