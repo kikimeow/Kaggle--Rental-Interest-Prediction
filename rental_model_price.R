@@ -1,5 +1,5 @@
 # set your working directory
-path <- "~/Kaggle/Kaggle- Rentals"
+path <- "input path"
 setwd(path)
 
 # load packages
@@ -18,7 +18,6 @@ memory.limit(size = 100000)
 
 # load files
 data <- readRDS(file = "data/data.Rda")
-data <- readRDS(file = "data/data_10.Rda")
 
 # Fill in column to be ignored by model.  To get rid of list in creating H2O frames
 colExclude <- c("created", "description", "features", "photos", "street_address", "fullDescription", "display_address")
