@@ -1,5 +1,5 @@
 # set your working directory
-path <- "~/Kaggle/Kaggle- Rentals"
+path <- "input path"
 setwd(path)
 
 # load packages
@@ -18,7 +18,6 @@ memory.limit(size = 100000)
 
 # load files
 data <- readRDS(file = "data/data.Rda")
-data <- readRDS(file = "data/data_10.Rda")
 
 # Fill in column to not import
 colExclude <- c("display_address","street_address" , "manager_id",  "building_id_original",  "fullDescription",
