@@ -23,6 +23,10 @@ The data fields given are as follows:
 * street_address
 * interest_level: this is the target variable. It has 3 categories: 'high', 'medium', 'low'
 
+### Instruction to run the files
+Create two file folders "/script" and "/data". Save the R scripts to script folder, and the data from Kaggle to the data folder.
+Each of the R script has the variable "Path".   Modify the path in the scripts.  The run.R file will run each of the scripts.  
+
 ### Feature Engineering
 Below are the reasonings behind some of the new features added to the modeling process:  
 
