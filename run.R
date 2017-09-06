@@ -17,5 +17,6 @@ dir.create(paste0("model output"))
 
 source("script/rental_preprocess_part1.R")
 source("script/rental_model_price.R")
+source("script/rental_model_price_xgb.R")
 source("script/rental_preprocess_part2.R")
 source("script/rental_model_classification")
