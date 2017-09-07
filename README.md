@@ -1,7 +1,7 @@
 ## Two Sigma Connect: Rental Listing Inquiries
 
 ### Overview
-The competition is a multi-class classification problem hosted by [Kaggle](https://www.kaggle.com/c/two-sigma-connect-rental-listing-inquiries).  The goal of the project is to predict how popular an apartment rental listing will be based on the listing content like text description, photos, number of bedrooms, price, etc. The data comes from renthop.com, an apartment listing website.  The apartments in the dataset are located in the New York City.  The target variable interest has 3 categories: high', 'medium', 'low'.
+The competition is a multi-class classification problem hosted by [Kaggle](https://www.kaggle.com/c/two-sigma-connect-rental-listing-inquiries).  The goal of the project is to predict how popular an apartment rental listing will be, based on the listing's content, such as text description, photos, number of bedrooms, price, etc. The data comes from renthop.com, an apartment listing website.  The apartments in the dataset are located in the New York City.  The target variable interest has 3 categories: high', 'medium', 'low'.
 
 Some of the challenges faced in the project involves text analytics, working with high-cardinality categorical features, and mapping.
 
