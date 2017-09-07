@@ -25,14 +25,17 @@ The data fields given are as follows:
 
 ### Instruction to run the files
 Create two file folders "/script" and "/data". Save the R scripts to script folder, and the data from Kaggle to the data folder.
-Each of the R script has the variable "Path".   Modify the path in the scripts.  The run.R file will run each of the scripts.  
+Each of the R script has the variable "Path".   Modify the path in the scripts.  The run.R file will run each of the scripts.
+
+### Process Overview
+One key component of the model is to predict the fair-price of a listing prior to predicting the interest level of the property.  To calculate fair-price, two models are run- the first is Random Forest model using H2O, and the second is XGBoost.  XGBoost is used again to predict the interest level of the listing.  
 
 ### Feature Engineering
 Below are the reasonings behind some of the new features added to the modeling process:  
 
 **Neighborhood** is an important factor in determining the attractiveness of a real estate.   A list of neighborhood names in New York was compiled.  The Google Maps Geocoding API is then used to find the coordinates of the neighborhoods.  Euclidian distance is used to measure the distance of the property to the various neighborhoods.  The new features added includes the nearest 5 neighborhoods.  The neighborhoods are also used to derive comparable prices in the same neighboorhoods.   
 
-**Building_id** is one of the features that added value in the model.  The intuition is that if a building is attractive, most of the units from the building will be attractive as well.  To capture the desirability of each building, building_id is re-encoded by the probability of each interest_level, conditional on each building_id.  For example, the new variable could be the probability of interest_level being high for the a particular building_id.  The [Vtreat](https://arxiv.org/pdf/1611.09477.pdf) package is used to encode the "building_id". Cross-validation is used to avoid data leakage in treating the variable.
+**Building_id** is one of the features that added value in the model.  The intuition is that if a building is attractive, most of the units from the building will be attractive as well.  To capture the desirability of each building, building_id is re-encoded by the probability of each interest_level, conditional on each building_id.  For example, the new variable could be the probability of interest_level being high for the a particular building_id.  The [vtreat](https://arxiv.org/pdf/1611.09477.pdf) package is used to encode the "building_id". Cross-validation is used to avoid data leakage in treating the variable.
 
 The count of the Building_id was also added as a new feature since interest_level might be affected by supply of the building.  
 
